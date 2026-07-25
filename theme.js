@@ -12,10 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (color1Input) color1Input.value = savedC1;
         if (color2Input) color2Input.value = savedC2;
         if (angleInput) angleInput.value = savedAng;
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+            body {
+                background: linear-gradient(${savedAng}, ${savedC1}, ${savedC2}) !important;
+                background-attachment: fixed !important;
+            }
+        `;
+        document.head.appendChild(style);
     }
 
     if (saveBtn) {
-        saveBtn.addEventListener('click', () => {
+        saveBtn.onclick = function() {
             const c1 = color1Input.value;
             const c2 = color2Input.value;
             const ang = angleInput.value;
@@ -32,6 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             `;
             document.head.appendChild(style);
-        });
+        };
     }
 });
