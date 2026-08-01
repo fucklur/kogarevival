@@ -55,3 +55,15 @@ footer {
 img {
   width: 32px;
 }
+
+.background {
+    background-color: #ffffff33;
+    border-radius: 40px;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
