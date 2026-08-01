@@ -51,3 +51,7 @@ footer {
 .warn {
   color: #ff0000;
 }
+
+img {
+  width: 32px;
+}
