@@ -5,6 +5,11 @@ body {
   text-align: center;
 }
 
+.warning1 {
+  background-color: yellow;
+  color: black;
+}
+
 h1 {
   font-family: 'Open Sans', sans-serif;
   color: white;
