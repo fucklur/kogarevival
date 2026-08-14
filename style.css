@@ -4,3 +4,10 @@ body {
   font-family: 'Open Sans';
   color: white;
 }
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 5%;
+  right: 5%;
+}
